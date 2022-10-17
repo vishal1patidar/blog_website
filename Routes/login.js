@@ -3,10 +3,6 @@ const router = express.Router();
 const Profile = require('../Models');
 const bcrypt = require('bcryptjs');
 
-router.get("", (req,res)=>{
-    res.send({mes : "1"})
-});
-
 router.post("", async (req,res)=>{
     try{
     const {email , password} = req.body;
