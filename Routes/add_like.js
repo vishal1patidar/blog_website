@@ -17,7 +17,7 @@ router.post("",async (req,res)=>{
     //const new_data = response.arr[0].email_liked;
     console.log(response)
     const array = response.arr[index].email_liked.push(visitor_email);
-    const user = new Profile({name : "ram", email : response.email, password : response.password ,friends : response.friends, arr :response.arr});
+    const user = new Profile({name : response.name, email : response.email, password : response.password ,friends : response.friends, arr :response.arr});
     await user.save();
 
     //console.log(arr);
