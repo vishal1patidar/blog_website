@@ -85,8 +85,7 @@ function Login(props) {
                     <button className="btn btn-primary" onClick = {handleClick}>Sign In</button>
                 
                 
-                <p>OR</p>
-                <a href="/register"> <button className="btn"> Sign Up</button> </a>
+                
 
             </center>
 
