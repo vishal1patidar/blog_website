@@ -23,7 +23,7 @@ app.use("/friends", friends);
 app.use("/profile",profile);
 
 if(process.env.NODE_ENV = "production"){
-    app.use(exp.static("frontend/build"));
+    app.use(express.static("frontend/build"));
 }
 
 
