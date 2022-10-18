@@ -39,7 +39,7 @@ useEffect( ()=>{
       <p>{props.content}</p>
       <button> {like} Likes </button>
       <button className="deletebutton" onClick = {click} >DELETE</button>
-      {!isLiked ? <button className="likebutton" onClick={click_like} >LIKE</button> : <button>LIKED</button>}
+      {!isLiked ? <button className="likebutton" onClick={click_like} >LIKE</button> : <button className="likebutton" >LIKED</button>}
     </div>
   );
 }
