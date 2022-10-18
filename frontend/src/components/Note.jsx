@@ -38,8 +38,8 @@ useEffect( ()=>{
       <h1>{props.title} </h1>
       <p>{props.content}</p>
       <button> {like} Likes </button>
-      <button onClick = {click} style = {{float : "right"}}>DELETE</button>
-      {!isLiked ? <button onClick={click_like} >LIKE</button> : <button>LIKED</button>}
+      <button className="deletebutton" onClick = {click} >DELETE</button>
+      {!isLiked ? <button className="likebutton" onClick={click_like} >LIKE</button> : <button>LIKED</button>}
     </div>
   );
 }
