@@ -66,6 +66,8 @@ function Register() {
         <input name = "password" placeholder = "Password" onChange={change} value = {registerData.password}/> <br/><br/>
         <input name="c_password" placeholder="Confirm Password" onChange={change} value = {registerData.c_password} /> <br/><br/>
         <button className="btn" type="submit" onClick={handleClick}> submit </button>
+        <br/><p>or</p><br/>
+        <a href = "/login"> <button className="btn2">Sign In</button></a>
         
     
 </center>
