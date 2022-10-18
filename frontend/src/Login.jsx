@@ -83,7 +83,8 @@ function Login(props) {
                     <p>Password: -- </p><input name="password" onChange={change} value = {loginData.password}/><br/><br/>
 
                     <button className="btn btn-primary" onClick = {handleClick}>Sign In</button>
-                
+                    <p>OR</p>
+                    <a href="/register"> <button className="btn"> Sign Up</button> </a>
                 
                 
 
