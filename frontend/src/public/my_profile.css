@@ -31,14 +31,13 @@ textarea {
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    
+    position: relative;
 }
 
 .blog button {
     font-size: 1.05rem;
-    position: relative;
-    top : 115px;
-    float: left;
+    position: absolute;
+    bottom : 5px;
     padding: 5px;
     margin-right: 10px;
     color: #000000;
@@ -48,6 +47,14 @@ textarea {
     height: auto;
     cursor: pointer;
     font-weight: bold;
+}
+
+.likebutton {
+    left : 90px;
+}
+
+.deletebutton{
+    right : 5px;
 }
 
 .allblog {
