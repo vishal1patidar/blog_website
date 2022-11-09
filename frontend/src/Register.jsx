@@ -1,6 +1,6 @@
 import "./public/styles.css"
 import { useState } from "react";
-import {useNavigate} from "react-router-dom"
+import { NavLink} from "react-router-dom"
 import axios from "axios";
 
 function Register() {
@@ -68,7 +68,7 @@ function Register() {
         <button className="btn" type="submit" onClick={handleClick}> submit </button>
         <br/><p>or</p><br/>
     
-    <a href = "/login"> <button className="btn2">Sign In</button></a>
+        <NavLink to = "/login"> <button className="btn2">Sign In</button> </NavLink>
     
 </center>
   
