@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./public/styles.css";
-import {NavLink} from "react-router-dom"
+import {useNavigate, NavLink} from "react-router-dom"
 import axios from "axios";
 
 function Login(props) {
