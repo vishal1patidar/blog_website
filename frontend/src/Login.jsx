@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./public/styles.css";
-import {useNavigate} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 import axios from "axios";
 
 function Login(props) {
@@ -68,7 +68,7 @@ function Login(props) {
                 
                 
                 <p>OR</p>
-                <a href="/register"> <button className="btn"> Sign Up</button> </a>
+                <NavLink to = "/login"> <button className="btn2">Sign In</button> </NavLink>
 
             </center>
 
