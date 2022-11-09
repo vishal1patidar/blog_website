@@ -7,13 +7,17 @@ const search = require("./Routes/search");
 const friends = require("./Routes/friends")
 const profile = require("./Routes/profile")
 const add_like = require("./Routes/add_like")
+const load = require('./Routes/load');
+const logout = require('./Routes/logout')
 const bodyParse = require("body-parser");
+const parser = require('cookie-parser')
 const cors = require('cors');
 
 const app = express();
 app.use(cors({ origin: true }));
 app.use(bodyParse.urlencoded({ extended: true }));
 app.use(bodyParse.json())
+app.use(parser());
 
 app.use("/register", register);
 app.use("/login", login);
@@ -23,6 +27,8 @@ app.use("/search", search);
 app.use("/friends", friends);
 app.use("/add_like", add_like);
 app.use("/profile",profile);
+app.use("/load", load);
+app.use("/logout", logout );
 
 if(process.env.NODE_ENV = "production"){
     app.use(express.static("frontend/build"));
